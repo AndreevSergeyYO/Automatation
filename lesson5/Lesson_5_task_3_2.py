@@ -17,6 +17,9 @@ try:
     for _ in range(3):
         blue_batton = driver.find_element(
             "xpath", '//button[text()="Button with Dynamic ID"]').click()
+        count = count + 1
+        sleep(2)
+        print(count)
         blue_batton = driverFf.find_element(
             "xpath", '//button[text()="Button with Dynamic ID"]').click()
         count = count + 1
