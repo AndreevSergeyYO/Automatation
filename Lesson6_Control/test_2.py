@@ -6,7 +6,7 @@ from configuration import *
 def test_calculator_form(chrome_browser):
     chrome_browser.get(URL_2)
     delay_input = chrome_browser.find_element(By.ID, "delay")
-    delay_input.clear
+    delay_input.clear()
     delay_input.send_keys(45)
     chrome_browser.find_element(By.XPATH, "//span[text() = '7']").click()
     chrome_browser.find_element(By.XPATH, "//span[text() = '+']").click()
