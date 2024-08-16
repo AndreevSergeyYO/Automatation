@@ -20,5 +20,5 @@ class CalMain:
         self.browser.find_element(By.XPATH, "//span[text() = '=']").click()
 
     def wait_batton_gettext(self):
-        WebDriverWait(self.browser, 46).until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen")))
+        WebDriverWait(self.browser, 46).until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"),'15'))
         return self.browser.find_element(By.CLASS_NAME, "screen").text
